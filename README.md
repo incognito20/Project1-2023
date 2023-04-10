@@ -80,7 +80,7 @@ https://www.kaggle.com/datasets/shuhengmo/uber-nyc-forhire-vehicles-trip-data-20
     * matplotlib.pyplot
     * pandas
     * nympy
-    * datetime *may need to be removed
+    * datetime
     * scipy.stats linregress
 <br><br>
 
@@ -178,21 +178,21 @@ https://www.kaggle.com/datasets/shuhengmo/uber-nyc-forhire-vehicles-trip-data-20
 
 ## How does weather affect ride volume?
 
-    We identified a positive correlation between ridership and temperature. In other words, daily ride count tended to increase as temperature increased. However, this correlation is weak (r-value:  ~0.218). In contrast, we discovered a negative correlation between ridership and precipitation, with ride count decreasing slightly as precipitation increases. This correlation is very weak (r-value:  ~-0.060). Overall, it appears that temperature may contribute to an increase in ride volume; however, precipitation does not appear to have an impact on ridership.
+We identified a positive correlation between ridership and temperature. In other words, daily ride count tended to increase as temperature increased. However, this correlation is weak (r-value:  ~0.218). In contrast, we discovered a negative correlation between ridership and precipitation, with ride count decreasing slightly as precipitation increases. This correlation is very weak (r-value:  ~-0.060). Overall, it appears that temperature may contribute to an increase in ride volume; however, precipitation does not appear to have an impact on ridership.
 
 ## How does weather affect rider fare?
 
-    We identified a positive correlation between median rider fare and temperature, with median rider fare tending to increase as temperature increased. This correlation was fairly moderate, compared to other trends we observed (r-value:  ~0.625). There was also a positive correlation between median rider fare and precipitation. However, this correlation was weak (r-value:  ~0.170). Overall, it appears that temperature may play a role in rider fare; however, precipitation does not appear to have any impact on rider fare.
+We identified a positive correlation between median rider fare and temperature, with median rider fare tending to increase as temperature increased. This correlation was fairly moderate, compared to other trends we observed (r-value:  ~0.625). There was also a positive correlation between median rider fare and precipitation. However, this correlation was weak (r-value:  ~0.170). Overall, it appears that temperature may play a role in rider fare; however, precipitation does not appear to have any impact on rider fare.
 
 ## What trends can be observed over time?
 
-    We identified time-based trending in the average daily ride count, with trends observed over days of the week, and month-to-month over the year. Weekly, the average daily ride count appears to gradually increase each day beginning on Monday, with the peak ride volume occurring on Saturday. Ride volume drops down dramatically on Sunday, but is still slightly higher than on Monday. This trend is what we expected, based on anecdotal evidence (i.e., our own personal rideshare experiences), as people tend to work on weekdays, and may be more likely to use a rideshare when attending social functions on the weekend.
+We identified time-based trending in the average daily ride count, with trends observed over days of the week, and month-to-month over the year. Weekly, the average daily ride count appears to gradually increase each day beginning on Monday, with the peak ride volume occurring on Saturday. Ride volume drops down dramatically on Sunday, but is still slightly higher than on Monday. This trend is what we expected, based on anecdotal evidence (i.e., our own personal rideshare experiences), as people tend to work on weekdays, and may be more likely to use a rideshare when attending social functions on the weekend.
 
-    Month-to-month, the average daily ride count appears to increase slightly beginning in January, with a peak in June. Then, a slight decrease can be observed over July and August, with another spike in ride count, peaking higher in October and November. We speculate that monthly ride volumes could correspond with local weather patterns, as well as other seasonal factors, such as the academic calendar and major holidays. Additionally, it’s possible that the COVID-19 Pandemic could have impacted ridership in the beginning of 2021, as a result of government lockdowns in place in New York City at that time. The peaks in ride volume we observed could have been impacted by the release of the COVID-19 vaccines and subsequent lifting of lockdowns. More research is needed to determine the impacts of the COVID-19 Pandemic on rideshare usage.
+Month-to-month, the average daily ride count appears to increase slightly beginning in January, with a peak in June. Then, a slight decrease can be observed over July and August, with another spike in ride count, peaking higher in October and November. We speculate that monthly ride volumes could correspond with local weather patterns, as well as other seasonal factors, such as the academic calendar and major holidays. Additionally, it’s possible that the COVID-19 Pandemic could have impacted ridership in the beginning of 2021, as a result of government lockdowns in place in New York City at that time. The peaks in ride volume we observed could have been impacted by the release of the COVID-19 vaccines and subsequent lifting of lockdowns. More research is needed to determine the impacts of the COVID-19 Pandemic on rideshare usage.
 
 ## Do temperature or trip length influence tips?
 
-    We identified a positive correlation between temperature and the percentage of riders who tip, with the percentage of rides in which the driver received a tip increasing as temperature increased. A similar correlation was observed between trip length (in miles) and the percentage of rides that received a tip. In both cases, the correlation was fairly weak (r-values:  ~0.299 and ~0.344, respectively). This indicates that weather conditions and trip length may have a small impact on tipping; however, as the relationship is not very strong, there are likely other factors that influence a rider’s decision to tip.
+We identified a positive correlation between temperature and the percentage of riders who tip, with the percentage of rides in which the driver received a tip increasing as temperature increased. A similar correlation was observed between trip length (in miles) and the percentage of rides that received a tip. In both cases, the correlation was fairly weak (r-values:  ~0.299 and ~0.344, respectively). This indicates that weather conditions and trip length may have a small impact on tipping; however, as the relationship is not very strong, there are likely other factors that influence a rider’s decision to tip.
 
 
 
