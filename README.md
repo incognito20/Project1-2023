@@ -12,8 +12,8 @@ https://www.kaggle.com/datasets/shuhengmo/uber-nyc-forhire-vehicles-trip-data-20
 <br><br>
 
 # Imported and Cleaned the Data
-
-    Ref:  Project1_DataPrep.ipynb
+### [Project1_DataPrep.ipynb](https://github.com/incognito20/Project1-2023/blob/main/Project1_DataPrep.ipynb)
+<br>
 
 1. Imported necessary dependencies:
     * pandas
@@ -47,13 +47,12 @@ https://www.kaggle.com/datasets/shuhengmo/uber-nyc-forhire-vehicles-trip-data-20
 <br><br>
 
 6. Imported weather CSV file as a new dataframe, removed unnecessary columns, and created new columns:
+    * **TEMP_F**:  created new column to convert 'temp' from Celsius to Fahrenheit
     * **CAL_DATE:**  created new column to convert ‘datetime’ string to datetime format
     * **MYDATE:**  created new column to convert ‘datetime’ string to date format (used to merge with ride dataframe)
     * **HOLIDAY:**  created bullion to identify holidays
     * **PRECIP_INCHES:**  created to convert ‘precip’ column from mm to inches
     * **WEATHER:**  created bullion to identify ‘DRY’ or ‘WET’ days (If ‘PRECIP_INCHES’ > .04, ‘WEATHER’ = ‘WET’)
-
-    * *Where did we create ‘TEMP_F’ column to convert temp to F?*
 <br><br>
 
 7. Imported taxi zone data from CSV as a new dataframe and dropped ‘service_zone’ column
@@ -74,7 +73,8 @@ https://www.kaggle.com/datasets/shuhengmo/uber-nyc-forhire-vehicles-trip-data-20
 <br><br>
 
 # Data Analysis and Visualization
-    Ref:  data_viz.ipynb
+### [data_viz.ipynb](https://github.com/incognito20/Project1-2023/blob/main/data_viz.ipynb)
+<br>
 
 1. Imported dependencies:
     * matplotlib.pyplot
@@ -85,8 +85,6 @@ https://www.kaggle.com/datasets/shuhengmo/uber-nyc-forhire-vehicles-trip-data-20
 <br><br>
 
 2. Imported VFH.csv file as a dataframe
-<br><br>
-    *Converted “MYDATE” column to datetime originally, before this was done in the data prep code. If updating to use the new CSV file, it may need to be removed from the data viz code, if already in datetime format*
 <br><br>
 
 3. Performed data analysis to answer the following questions:
@@ -109,7 +107,7 @@ https://www.kaggle.com/datasets/shuhengmo/uber-nyc-forhire-vehicles-trip-data-20
     * Set both of these values as ‘float’
     * Created a scatter plot with temperature on the x-axis and ride count on the y-axis
     * Plotted the linear regression for the relationship and determined the r-value
-    * Printed the plot to the Jupyter notebook and saved the image to the “figures” folder (Ref:  Fig1.png)
+    * Printed the plot to the Jupyter notebook and saved the image to the “figures” folder ([Fig1.png](https://github.com/incognito20/Project1-2023/blob/main/figures/Fig1.png)).
 <br><br>
 
 4. Created a scatter plot to show the relationship between the number of rides completed per day and precipitation
@@ -117,7 +115,7 @@ https://www.kaggle.com/datasets/shuhengmo/uber-nyc-forhire-vehicles-trip-data-20
     * Set both of these values as ‘float’
     * Created a scatter plot with precipitation on the x-axis and ride count on the y-axis
     * Plotted the linear regression for the relationship and determined the r-value
-    * Printed the plot to the Jupyter notebook and saved the image to the “figures” folder (Ref:  Fig2.png)
+    * Printed the plot to the Jupyter notebook and saved the image to the “figures” folder ([Fig2.png](https://github.com/incognito20/Project1-2023/blob/main/figures/Fig2.png)).
 <br><br>
 
 5. Created a scatter plot to show the relationship between rider fare and temperature
@@ -125,7 +123,7 @@ https://www.kaggle.com/datasets/shuhengmo/uber-nyc-forhire-vehicles-trip-data-20
     * Set both of these values as ‘float’
     * Created a scatter plot with temperature on the x-axis and median rider fare on the y-axis
     * Plotted the linear regression for the relationship and determined the r-value
-    * Printed the plot to the Jupyter notebook and saved the image to the “figures” folder (Ref:  Fig3.png)
+    * Printed the plot to the Jupyter notebook and saved the image to the “figures” folder ([Fig3.png](https://github.com/incognito20/Project1-2023/blob/main/figures/Fig3.png)).
 <br><br>
 
 6. Created a scatter plot to show the relationship between rider fare and precipitation
@@ -133,7 +131,7 @@ https://www.kaggle.com/datasets/shuhengmo/uber-nyc-forhire-vehicles-trip-data-20
     * Set both of these values as ‘float’
     * Created a scatter plot with precipitation on the x-axis and median rider fare on the y-axis
     * Plotted the linear regression for the relationship and determined the r-value
-    * Printed the plot to the Jupyter notebook and saved the image to the “figures” folder (Ref:  Fig4.png)
+    * Printed the plot to the Jupyter notebook and saved the image to the “figures” folder ([Fig4.png](https://github.com/incognito20/Project1-2023/blob/main/figures/Fig4.png)).
 <br><br>
 
 7. Created a bar chart to show the relationship between the ride volume and day of the week<br><br>
@@ -142,7 +140,7 @@ https://www.kaggle.com/datasets/shuhengmo/uber-nyc-forhire-vehicles-trip-data-20
     * Then, calculated the average daily ride count for each day of the week, based on the number of times each day of the week occurred for the year (in most cases, each day of the week occurred 52 times)
     * Set both of these values as ‘float’
     * Created a bar chart with days of the week on the x-axis and average daily ride count on the y-axis
-    * Printed the plot to the Jupyter notebook and saved the image to the “figures” folder (Ref:  Fig5.png)
+    * Printed the plot to the Jupyter notebook and saved the image to the “figures” folder ([Fig5.png](https://github.com/incognito20/Project1-2023/blob/main/figures/Fig5.png)).
 <br><br>
 
 8. Created a bar chart to show the relationship between the ride volume and month of the year<br><br>
@@ -152,7 +150,7 @@ https://www.kaggle.com/datasets/shuhengmo/uber-nyc-forhire-vehicles-trip-data-20
     * Then, calculated the average daily ride count for each month by dividing the total monthly ride count by the number of days in the month
     * Set both of these values as ‘float’
     * Created a bar chart with months on the x-axis and average daily ride count on the y-axis
-    * Printed the plot to the Jupyter notebook and saved the image to the “figures” folder (Ref:  Fig6.png)
+    * Printed the plot to the Jupyter notebook and saved the image to the “figures” folder ([Fig6.png](https://github.com/incognito20/Project1-2023/blob/main/figures/Fig6.png)).
 <br><br>
 
 9. Created a scatter plot to show the relationship between temperature and the percentage of rides that included a driver tip
@@ -163,7 +161,7 @@ https://www.kaggle.com/datasets/shuhengmo/uber-nyc-forhire-vehicles-trip-data-20
     * Set both of these values as ‘float’
     * Created a scatter plot with temperature on the x-axis and percent of rides with tips on the y-axis
     * Plotted the linear regression for the relationship and determined the r-value
-    * Printed the plot to the Jupyter notebook and saved the image to the “figures” folder (Ref:  Fig7.png)
+    * Printed the plot to the Jupyter notebook and saved the image to the “figures” folder ([Fig7.png](https://github.com/incognito20/Project1-2023/blob/main/figures/Fig7.png)).
 <br><br>
 
 10. Created a scatter plot to show the relationship between trip length and the percentage of rides that included a driver tip<br><br>
@@ -173,7 +171,7 @@ https://www.kaggle.com/datasets/shuhengmo/uber-nyc-forhire-vehicles-trip-data-20
     * Set both of these values as ‘float’
     * Created a scatter plot with average trip length on the x-axis and percent of rides with tips on the y-axis
     * Plotted the linear regression for the relationship and determined the r-value
-    * Printed the plot to the Jupyter notebook and saved the image to the “figures” folder (Ref:  Fig8.png)
+    * Printed the plot to the Jupyter notebook and saved the image to the “figures” folder ([Fig8.png](https://github.com/incognito20/Project1-2023/blob/main/figures/Fig8.png)).
     <br><br>
 
 # Analysis of Results
