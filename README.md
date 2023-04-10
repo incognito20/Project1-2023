@@ -80,7 +80,7 @@ https://www.kaggle.com/datasets/shuhengmo/uber-nyc-forhire-vehicles-trip-data-20
     * matplotlib.pyplot
     * pandas
     * nympy
-    * datetime *may need to be removed
+    * datetime
     * scipy.stats linregress
 <br><br>
 
